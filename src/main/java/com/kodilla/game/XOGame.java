@@ -360,7 +360,7 @@ public class XOGame extends Application implements EventHandler<ActionEvent> {
                     || b1 + b5 + b9 == 3 || b3 + b5 + b7 == 3) {
                 status.setText("WYGRANA ! \nKONIEC GRY");
                 for (Button btn : buttons){
-                    String bg = "-fx-background-color:  #33d933 ; -fx-background-radius: 30";
+                    String bg = "-fx-background-color:  #33d933 ; -fx-background-radius: 20";
                     btn.setDisable(true);
 
                     if (b1 + b2 + b3 == 3) {
@@ -387,7 +387,7 @@ public class XOGame extends Application implements EventHandler<ActionEvent> {
                     || b1 + b5 + b9 == -3 || b3 + b5 + b7 == -3) {
                 status.setText("PRZEGRANA ! \nKONIEC GRY");
                 for (Button btn : buttons) {
-                    String bg = "-fx-background-color: #f12d2d ; -fx-background-radius: 50";
+                    String bg = "-fx-background-color: #f12d2d ; -fx-background-radius: 20";
                     btn.setDisable(true);
                     if (b1 + b2 + b3 == -3) {
                         buttons[0].setStyle(bg); buttons[1].setStyle(bg); buttons[2].setStyle(bg);
@@ -410,7 +410,16 @@ public class XOGame extends Application implements EventHandler<ActionEvent> {
                 gameOver();
             }else if (b1 !=0 && b2 != 0 && b3 != 0 && b4 != 0
                     && b5 != 0 && b6 != 0 && b7 != 0 && b8 != 0 && b9 != 0 ) {
+                for (Button btn : buttons) {
+                    String bg = "-fx-background-color: #cbc7c7 ; -fx-background-radius: 20";
+                    btn.setDisable(true);
+                    {
+                        buttons[0].setStyle(bg); buttons[1].setStyle(bg); buttons[2].setStyle(bg);
+                        buttons[3].setStyle(bg); buttons[4].setStyle(bg); buttons[5].setStyle(bg);
+                        buttons[6].setStyle(bg); buttons[7].setStyle(bg); buttons[8].setStyle(bg);
+                    }
                     status.setText("REMIS ! \nKONIEC GRY");
+                }
             }
         }
     }
