@@ -9,7 +9,7 @@ javafx {
 
 group = 'com.kodilla-java-game'
 version = '0.0.1-SNAPSHOT'
-mainClassName = 'com.kodilla.game.BlackJack'
+mainClassName = 'com.kodilla.game.XOGame'
 
 repositories {
     mavenCentral()

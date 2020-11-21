@@ -1,4 +1,4 @@
-package TicTacToe;
+package com.kodilla.game;
 
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -32,7 +32,6 @@ public class XOButton extends Button {
             this.setDisable(true);
             this.setOpacity(1);
         }else if (state == -1) {
-            this.getOnMouseClicked();
             this.setGraphic(xV);
             this.value = -1;
             this.setDisable(true);
