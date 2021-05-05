@@ -7,7 +7,6 @@ You play with a computer player.
 
 Technology:
 - Java 11
-- JUnit
 - Gradle
 - JavaFX
 
